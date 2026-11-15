@@ -16,3 +16,8 @@ Upload the contents of this directory to any static host (Cloudflare Pages, Netl
 - Test HEIC conversion in Safari and Chrome; it requires the heic2any CDN.
 - SEO: dedicated server-rendered routes and original explanatory content are recommended for every tool; query-string routing here is a functional MVP, not final SEO architecture.
 - Compression is best effort; PNG transparency is lost when converting to JPEG.
+## GA4 analytics setup
+1. Create a Google Analytics 4 property and Web data stream for `https://yinchengzhang.github.io/pixelcraft-tools/`.
+2. Edit `analytics.js` and replace the empty `GA4_MEASUREMENT_ID` with your `G-XXXXXXXXXX` value.
+3. Commit to `main`; GitHub Pages deploys automatically.
+4. Accept optional analytics on the live site and verify activity in Google Analytics Realtime. Visitors who decline are not tracked. Analytics cannot reconstruct visits before setup.
